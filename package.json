@@ -1,0 +1,32 @@
+{
+  "name": "routing-workshop",
+  "version": "1.0.0",
+  "description": "This repository is focused on learning and exploring the basic use of routers within Express.js applications.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gadrawingz/routing-workshop-express.git"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "router",
+    "routing"
+  ],
+  "author": "Gad Iradufasha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gadrawingz/routing-workshop-express/issues"
+  },
+  "homepage": "https://github.com/Gadrawingz/routing-workshop-express#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
