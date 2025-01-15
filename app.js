@@ -2,6 +2,10 @@ const express = require("express");
 const app = express();
 const port = 3009;
 
+// load the router modules
+const colors = require("./routes/colors");
+const basicR = require("./routes/basics");
+
 /**
  *
  * @access: GET method route
@@ -36,6 +40,9 @@ app.all("/user", (req, res, next) => {
 });
 
 // load the router module in the app:
+// if 1 of routes has its own middleware, it will run
+app.use("/colors", colors);
+app.use("/basics", basicR);
 
 //  Run app...
 app.listen(port, (err) => {
