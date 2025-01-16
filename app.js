@@ -7,6 +7,7 @@ const colors = require("./routes/colors");
 const basicR = require("./routes/basics");
 const stringURL = require("./routes/string-based");
 const routerPar = require("./routes/router-params");
+const routeHand = require("./routes/route-handler");
 
 /**
  *
@@ -47,6 +48,7 @@ app.use("/colors", colors);
 app.use("/basics", basicR);
 app.use("/string-params", stringURL);
 app.use("/router-params", routerPar);
+app.use("/route-handler", routeHand);
 
 //  Run app...
 app.listen(port, (err) => {
