@@ -5,6 +5,8 @@ const port = 3009;
 // load the router modules
 const colors = require("./routes/colors");
 const basicR = require("./routes/basics");
+const stringURL = require("./routes/string-based");
+const routerPar = require("./routes/router-params");
 
 /**
  *
@@ -43,6 +45,8 @@ app.all("/user", (req, res, next) => {
 // if 1 of routes has its own middleware, it will run
 app.use("/colors", colors);
 app.use("/basics", basicR);
+app.use("/string-params", stringURL);
+app.use("/router-params", routerPar);
 
 //  Run app...
 app.listen(port, (err) => {
